@@ -9,3 +9,8 @@ Dependencias
 - Socket.io
 - express.js
 - Node.js
+
+Demo
+=========================
+Visitar el deployment de la App en:
+http://chatjs-nelkit.herokuapp.com/
