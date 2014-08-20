@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat iOS Socket.io</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script lang="javascript" src="http://code.jquery.com/jquery-latest.min.js">
+	</script>
+	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<div id="wrapper">
+		<a class="icon-chat" id="icon-chat"><i class="flaticon-live2"></i></a>
+	</div>
+	<div id="bar_bottom_wp">
+		<h1>Chat Socket.io with Node.JS</h1>
+	</div>
+
+	<div id="ct-chat">
+		<section class="ct-topbar">
+			<span class="title">CHAT WITH NODE.JS</span>
+			<a class="close"><i class="flaticon-delete30"></i></a>
+		</section>
+		<section class="ct-body">
+			<section class="columns width-4 insert-widget">
+				<div class="width-12 row">
+					<label for="name">Ingresa Tu Nombre:
+						<input type="text" class="txt-box" id="name">
+					</label>
+				</div>
+				<div class="width-12 row">
+					<label for="">Ingresa El Mensaje:
+						<textarea name="" class="txt-box" id="message" cols="30" rows="10"></textarea>
+					</label>
+				</div>
+				<div class="width-12 row">
+					<a id="enviarMensaje" class="btn enviar width-12">Enviar</a>
+				</div>
+				<br>
+			</section>
+			<section id="messages" class="columns width-8">
+							 
+			</section>
+		</section>
+	</div>
+</body>
+</html>
