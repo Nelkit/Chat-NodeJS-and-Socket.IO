@@ -6,7 +6,9 @@ var server = express();
 
 server.use(express.static(__dirname+"/app"));
 
-http.createServer(server).listen(5000, function() {
-	console.log("El APP node.js esta corriendo en %d", this.address().port);
+server.set('port', process.env.PORT || 3000);
+
+http.createServer(server).listen(server.get('port'), function() {
+	console.log("El APP node.js esta corriendo en %d", server.get('port'));
 	websockets(this);
 });

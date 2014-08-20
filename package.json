@@ -6,12 +6,14 @@
     "start": "node server/index.js"
   },
   "engines": {
-    "node": "0.10.28"
+    "node": "0.10.28",
+     "npm": "1.4.9"
   },
   "dependencies": {
     "express": "^3.16.7",
     "jade": "^1.5.0",
     "logfmt": "^1.1.2",
-    "socket.io": "^1.0.6"
+    "socket.io": "^1.0.6",
+    "ws": "0.4.x",
   }
 }
